@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 
 const Item = ({id, nombre, img, price, stock}) => {
     return(
-        <article>
-            <header>
-                <h2>{nombre}</h2>
-            </header>
+        <article className={styles.cardContainer}>
             <picture>
                 <img src={img} alt={nombre}/>
             </picture>
-            <section>
+            <header>
+                <h2 className={styles.title}>{nombre}</h2>
+            </header>
+            <section className={styles.section}>
                 <p>Precio: ${price}</p>
-                <p>Stock disponible: {stock}</p>
+                <p>Stock: {stock}</p>
             </section>
             <footer>
-                <Link to={`/item/${id}`} className='option'>Ver Detalle</Link>
+                <Link className={styles.btn} to={`/item/${id}`}>Ver Detalle</Link>
             </footer>
         </article>
     )

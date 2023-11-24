@@ -11,9 +11,9 @@ function NavBar () {
             </Link>
             <div>
                 <ul>
-                    <NavLink to={`/category/celular`}>Mangas</NavLink>
-                    <NavLink to={`/category/tablet`}>Comics</NavLink>
-                    <NavLink to={`/category/notebook`}>Merchandising</NavLink>
+                    <NavLink to={`/category/Mangas`}>Mangas</NavLink>
+                    <NavLink to={`/category/Comics`}>Comics</NavLink>
+                    <NavLink to={`/category/Manhwas`}>Manhwas</NavLink>
                 </ul>
             </div>
             <CartWidget/>

@@ -1,13 +1,15 @@
-import styles from './ItemDetailContainer';
+import styles from './ItemDetailContainer.module.css';
 import { useEffect, useState } from 'react';
 import { getProductsById } from '../../asynmock';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
     const [product, setProduct] = useState(null)
+    const { itemId } = useParams()
 
     useEffect(() => {
-        getProductsById('1')
+        getProductsById(itemId)
             .then(response => {
                 setProduct(response)
             })

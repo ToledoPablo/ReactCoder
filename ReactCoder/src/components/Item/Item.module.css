@@ -1,0 +1,29 @@
+.cardContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    color: black;
+    margin: 30px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.section {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: rgb(0, 165, 166);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
